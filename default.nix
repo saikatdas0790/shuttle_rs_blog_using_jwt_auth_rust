@@ -1,6 +1,6 @@
 {}:
 let
-  rev = "ad7efee13e0d216bf29992311536fce1d3eefbef";
+  rev = "ea2fc7efd84c640bff3e0b240edaaf4b437e11e5";
   nixpkgs = fetchTarball "https://github.com/NixOS/nixpkgs/archive/${rev}.tar.gz";
   pkgs = import nixpkgs { };
   overrides = (builtins.fromTOML (builtins.readFile ./rust-toolchain.toml));
